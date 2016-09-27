@@ -26,7 +26,7 @@ sudo yum install -y protobuf-compiler protobuf-devel
 luarocks install loadcaffe
 
 echo "Downloading artistic-videos."
-git clone https://github.com/manuelruder/artistic-videos
+git clone https://github.com/manuelruder/artistic-videos ~/artistic-videos
 cd ~/artistic-videos 
 
 echo "Downloading VGG models."
