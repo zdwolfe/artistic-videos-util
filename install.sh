@@ -26,12 +26,12 @@ unzip deepmatching_1.2.2.zip
 cp deepmatching_1.2.2_c++/deepmatching-static ~/artistic-videos
 
 echo "artistic-videos-util Installing dependencies."
-echo "artistic-videos-util Installing torch, protobuf, cmake, ffmpeg, openblas."
+echo "artistic-videos-util Installing torch, protobuf, cmake, libav-tools, openblas."
 sudo apt-get update
 sudo apt-get install -y software-properties-common
 sudo add-apt-repository -y ppa:george-edison55/cmake-3.x
 sudo apt-get update
-sudo apt-get install -y libprotobuf-dev libopenblas-dev protobuf-compiler torch7-nv cmake ffmpeg
+sudo apt-get install -y libprotobuf-dev libopenblas-dev protobuf-compiler torch7-nv cmake libav-tools
 
 echo "artistic-videos-util Installing loadcaffe."
 sudo luarocks install loadcaffe
