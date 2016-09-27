@@ -1,6 +1,6 @@
 This is a small collection of utility scripts to set up and run [manuelruder's artistic-videos](https://github.com/manuelruder/artistic-videos).
 
-# Setup:
+# Setup
 ## Hardware/OS
 
 Rent something with yum, cuda, and a lot of GPU memory. [Amazon Linux AMI with NVIDIA GRID GPU Driver](https://aws.amazon.com/marketplace/pp/B00FYCDDTE) running on a g2.8xlarge works well (these are about $2/hour, so be careful).
