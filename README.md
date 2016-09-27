@@ -8,7 +8,9 @@ Rent something with yum, cuda, and a lot of GPU memory. [Amazon Linux AMI with N
 ## Installation
 
 1. Connect to host: ``ssh -i "<your AWS pem file>" ec2-user@<you>.compute-1.amazonaws.com``
-2. Run ``install.sh``
+2. Install git ``sudo yum install git``
+3. Clone this repository
+4. Run ``install.sh``
 
 # Usage
 
