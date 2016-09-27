@@ -35,10 +35,10 @@ sh models/download_models.sh
 
 echo "Setting up DeepFlow2"
 cd ~/artistic-videos
-wget -v http://pascal.inrialpes.fr/data2/deepmatching/files/DeepFlow_release2.0.tar.gz
-tar -xzf DeepFlow_release2.0.tar.gz
-cp DeepFlow_release2.0/deepmatching-static ./
-cp DeepFlow_release2.0/deepflow2-static ./
+wget -v http://pascal.inrialpes.fr/data2/deepmatching/files/DeepFlow_release2.0.tar.gz -O ~/artistic-videos/DeepFlow_release2.0.tar.gz
+tar -xzf ~/artistic-videos/DeepFlow_release2.0.tar.gz
+cp ~/artistic-videos/DeepFlow_release2.0/deepmatching-static ~/artistic-videos
+cp ~/artistic-videos/DeepFlow_release2.0/deepflow2-static ~/artistic-videos
 
 
 echo "Setting up directory structure."
