@@ -3,7 +3,7 @@ This is a small collection of utility scripts to set up and run [manuelruder's a
 # Setup
 ## Hardware/OS
 
-Rent something with yum, cuda, and a lot of GPU memory. [Amazon Linux AMI with NVIDIA GRID GPU Driver](https://aws.amazon.com/marketplace/pp/B00FYCDDTE) running on a g2.2xlarge works well (these are about $1/hour, so be careful).
+Rent something with apt-get, cuda, and a lot of GPU memory. [Bitfusion Ubuntu 14 TensorFlow](https://aws.amazon.com/marketplace/pp/B01EYKBEQ0) running on a g2.2xlarge works well (these are about $1/hour, so be careful). This has Cuda and cuDNN pre-installed which are somewhat tedious to configure so it's worth the few cents.
 
 ## Installation
 
