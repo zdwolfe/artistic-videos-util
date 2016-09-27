@@ -25,15 +25,16 @@ echo "Installing protobuf."
 sudo yum install -y protobuf-compiler protobuf-devel
 luarocks install loadcaffe
 
-echo "Downloading neural-style."
-git clone https://github.com/jcjohnson/neural-style ~/neural-style
-cd ~/neural-style 
+echo "Downloading artistic-videos."
+git clone https://github.com/manuelruder/artistic-videos
+cd ~/artistic-videos 
 
 echo "Downloading VGG models."
 sh models/download_models.sh
 
 
 echo "Setting up DeepFlow2"
+cd ~/artistic-videos
 wget -v http://pascal.inrialpes.fr/data2/deepmatching/files/DeepFlow_release2.0.tar.gz
 tar -xzf DeepFlow_release2.0.tar.gz
 cp DeepFlow_release2.0/deepmatching-static ./
