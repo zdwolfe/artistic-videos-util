@@ -19,8 +19,13 @@ tar -xzf ~/artistic-videos/DeepFlow_release2.0.tar.gz
 cp ~/artistic-videos/DeepFlow_release2.0/deepmatching-static ~/artistic-videos
 cp ~/artistic-videos/DeepFlow_release2.0/deepflow2-static ~/artistic-videos
 
-echo "artistic-videos-util Installing dependencies."
+echo "artistic-videos-util Setting up DeepMatching"
+wget -v http://lear.inrialpes.fr/src/deepmatching/code/deepmatching_1.2.2.zip -O ~/artistic-videos/deepmatching_1.2.2.zip
+cd ~/artistic-videos
+unzip deepmatching_1.2.2.zip
+cp deepmatching_1.2.2_c++/deepmatching-static ~/artistic-videos
 
+echo "artistic-videos-util Installing dependencies."
 echo "artistic-videos-util Installing torch, protobuf, cmake."
 sudo apt-get update
 sudo apt-get install -y software-properties-common
